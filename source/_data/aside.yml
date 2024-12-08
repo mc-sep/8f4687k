@@ -1,0 +1,78 @@
+- name: welcome
+  title: 来访者
+  class: card-welcome
+  id:
+  icon: fas fa-wifi
+  content_id: welcome-info
+  content_css: 'height:160px;overflow:hidden'
+  content_html: '<div class="welcome_swiper-container" id="welcome-container" style="width: 100%;height: 100%;margin-top: 6px">
+        <div id="welcome_container_wrapper" class="swiper-wrapper"></div>
+    </div>'
+
+- name: gonggao
+  title: 公告
+  class: card-gonggao
+  id:
+  icon: fas fa-toolbox
+  content_id: gonggao-info
+  content_css: 'height:170px;overflow:hidden'
+  content_html: '1. 因为要上学</b>，我的文章更新速度可能会一周一篇</b>，请见谅！!<br>2. 本站域名变更，请访问 blog.mc-sep.top <br>总访问量：<img src="https://counter5.optistats.ovh/private/freecounterstat.php?c=c3mfhp1frc7yf5saezh1yq8ujdlk5grh">'
+
+- name: webs
+  title: 网站信息
+  class: card-webs
+  id:
+  icon:  fas fa-clone
+  content_id: webs-info
+  content_css: 'height:90px;overflow:hidden'
+  content_html: '<img src="https://img.shields.io/badge/Theme-Hexo-blue?style=flat&logo=Hexo"><img src="https://img.shields.io/badge/Located%20on-Github-purple?style=flat&logo=Github"><br><img src="https://img.shields.io/badge/CDN-Vercel%20China-yellow?style=flat&logo=Vercel"><img src="https://img.shields.io/badge/Server-Vercel-green?style=flat&logo=Vercel"><br><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris"><br>'
+
+
+- name: schedule
+  id: card-widget-schedule
+  content_html: |
+    <div id="schedule-area-left">
+      <div id="schedule-title">距离我生日</div>
+      <div id="schedule-days"></div>
+      <div id="schedule-date">2025-01-04</div>
+    </div>
+    <div id="schedule-area-right">
+      <div class="schedule-r0">
+        <div class="schedule-d0">本年</div>
+        <div class="schedule-d1">
+          <span id="p_span_year" class="aside-span1"></span>
+          <span class="aside-span2">还剩<a></a>天</span>
+          <progress max="365" id="pBar_year"></progress>
+        </div>
+      </div>
+      <div class="schedule-r1">
+        <div class="schedule-d0">本月</div>
+        <div class="schedule-d1">
+          <span id="p_span_month" class="aside-span1"></span>
+          <span class="aside-span2">还剩<a></a>天</span>
+          <progress max="30" id="pBar_month"></progress>
+        </div>
+      </div>
+      <div class="schedule-r2">
+        <div class="schedule-d0">本周</div>
+        <div class="schedule-d1">
+          <span id="p_span_week" class="aside-span1"></span>
+          <span class="aside-span2">还剩<a></a>天</span>
+          <progress max="7" id="pBar_week"></progress>
+        </div>
+      </div>
+    </div>
+
+- name: calendar
+  id: card-widget-calendar
+  content_html: |
+    <div id="calendar-area-left">
+      <div id="calendar-week"></div>
+      <div id="calendar-date" style="font-size: 48px;"></div>
+      <div id="calendar-solar"></div>
+      <div id="calendar-lunar"></div>
+    </div>
+    <div id="calendar-area-right">
+      <div id="calendar-main">
+      </div>
+    </div>
